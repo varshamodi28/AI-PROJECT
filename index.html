@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angoor AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>ANGOOR <b>AI</b> | FIREWALL</h1>
+        <button id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </header>
+    
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <button id="newChatButton"><i class="fas fa-plus"></i> New Chat</button>
+                <a id="closeSidebarButton"><i class="fas fa-angle-left"></i></a>
+            </div>
+            <div><h5>Your Chats</h5></div>
+            <div class="chat-box">
+                <div class="chat">
+                    <p>Get Started</p>
+                    <div class="chat-icons">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-share-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="middle-section">
+            <div class="content-header">
+                <h2>Get Started</h2>
+                <a id="toggleButton">Make Chat Public: <i class="fas fa-toggle-on"></i> </a>
+                <button id="copyLinkButton"><i class="fas fa-share-alt"></i> Copy Share Link</button>
+            </div>
+            <hr>
+            <div class="content-left">
+                <i class="fas fa-comment"></i>
+                <h3>ANGOOR AI | FIREWALL</h3>
+                <p>Upload documents, links or anything, and our<br>chatbot will give you answer to any questions</p>
+                <input type="text" placeholder="Start typing..." style="margin-top: 395px;">
+            </div>
+            
+        </div>
+        <hr>
+        <div class="right-section">
+            <div class="content-right">
+                <div class="files">
+                    <h3>Files</h3>
+                    <a href="#" id="addResourcesButton">+ Add Resources</a>
+                </div>
+                <hr>
+                <div class="drag-drop-section">
+                    <div class="upload-box">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag and drop files here. </p>
+                        <!-- <label for="fileInput">Browse for files</label>
+                        <input type="file" id="fileInput"> -->
+                    </div>
+                    <hr>
+                    <div class="link-input">
+                        <p>OR</p>
+                        <input type="text" placeholder="Enter link here">
+                        <button id="submitLinkButton"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

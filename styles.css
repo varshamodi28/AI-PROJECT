@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #b46fe9;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#logoutButton {
+    color: #b46fe9;
+    border: 0.5px solid #b46fe9;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #252426;
+}
+
+#logoutButton i {
+    margin-right: 5px;
+}
+
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+
+.sidebar {
+    width: 25%;
+    background-color: #252426;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newChatButton {
+    background-color: #b46fe9;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#closeSidebarButton {
+    
+        font-size: 24px; 
+        text-decoration: none; 
+        color: #fdfdfd; 
+    
+}
+        #closeSidebarButton:hover {
+            color: #fdfdfd; 
+            cursor: pointer; 
+        }
+        
+
+#newChatButton i,
+#closeSidebarButton i {
+    margin-right: 5px;
+}
+
+h5,h2 {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #9f9f9f;
+}
+
+
+h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.chat-box {
+    background-color: #6c6969; 
+    border: 1px solid #767474;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.chat p {
+    flex: 1;
+}
+
+.chat-icons {
+    display: flex;
+}
+
+.chat-icons i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+.middle-section {
+    width: 25%;
+    background-color: #252426;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+}
+
+.content-header h2 {
+    font-weight: bold;
+    color: #fff;
+}
+
+#toggleButton {
+    background-color: #252426;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#copyLinkButton {
+    background-color: #252426;
+    color: #fff;
+    border: 1px 0.8px 0.5px 0.2px solid white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.content-left {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-left p {
+    font-weight: bold;
+    color: #fff;
+}
+
+.content-left i {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.content-left input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+}
+
+
+.right-section {
+    width: 40%;
+    background-color: #252426;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-right {
+    margin-top: 20px;
+}
+
+.files {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.files h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+#addResourcesButton {
+    background-color: #252426;
+    color: #b46fe9;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 0.5px solid grey;
+}
+
+.drag-drop-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.drag-drop-section p {
+    font-weight: bold;
+    color: #fff;
+}
+
+.drag-drop-section input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submitLinkButton {
+    background-color: #b46fe9;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#submitLinkButton i {
+    margin-left: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .middle-section,
+    .right-section {
+        width: 100%;
+    }
+}
+
+
+input[type="text"] {
+    border: 0.2px solid #fff; 
+    border-radius: 4px;
+    background-color: #252426;
+    padding: 8px; 
+    outline: none; 
+}
+
+
+
+
+
+
+
+
+
+.middle-section {
+    width: 90%;
+}
+
+.upload-box {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.upload-box i {
+    font-size: 48px;
+}
+
+.upload-box p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.upload-box label {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-box label:hover {
+    background-color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .middle-section {
+        width: 100%;
+    }
+}
+
+
+
+
+.main-container {
+    display: flex;
+    border-left: 0.5px solid grey; 
+    border-right: 0.5px solid grey; 
+}
+
+
+
+.sidebar {
+    border-right: 0.5px solid grey; 
+}
+
+.right-section {
+    border-left: 0.5px solid grey; }
